@@ -1,13 +1,127 @@
-body {
+/* index.css */
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} */
+
+/* This styles the whole page's background */
+body {
+  background-color: #b3b5b8; /* subtle grey, you can change it to any color you prefer */
 }
+
+/* This styles the specific container of the dashboard if it has an id or class */
+.dashboard-container {
+  background-color: #c7c5c5; /* Or any other color you'd like */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* This adds a subtle shadow for depth */
+}
+
+
+/* If the chart and the title have their own container, you could also style that */
+#chart-container { /* replace with the actual id or class */
+  background-color: #a7a3a3; /* keeping the chart background white for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px; /* adds some space between chart and any content below */
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #8f8a8a; /* This sets a light grey background */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Additional global styles */
+.container {
+  padding: 50px;
+  width: 80%;
+  margin: auto;
+}
+
+/* Assuming .chart-container is the class of the div that contains your chart */
+.chart-container {
+  padding: 15px;
+  border: 1px solid #e0e0e0; /* Light grey border */
+  background: linear-gradient(180deg, #ffffff 0%, #f2f2f2 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Add a gradient background to the chart container */
+#chartdiv {
+  background: linear-gradient(to bottom right, #e6e9f0 0%, #eef1f5 100%);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Style the dashboard title */
+h1 {
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  display: inline-block;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.container {
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+}
+
+.chart-container {
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Style adjustments specific for the financial chart */
+.igr-financial-chart {
+  height: 600px; /* Adjust based on your preference */
+}
+
+
+#chartdiv {
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+}
+
+/* Additional amCharts styles */
+.amcharts-StockChart {
+  height: 100%;
 }
